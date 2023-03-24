@@ -1,0 +1,487 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0efe7;
+  color: #333;
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
+  padding-bottom: 6rem;
+}
+
+header {
+  color: #000F55;
+  padding: 1.2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3.7rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+main {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 3.5rem;
+}
+
+form {
+  display: flex;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+/* Label Styles */
+label {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+
+input[type="text"] {
+  flex-grow: 0.6;
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  background-color: #f2f2f2;
+  border: 0.1rem solid black;
+  font-family: 'Indie Flower', cursive;
+}
+
+input[type="date"] {
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  background-color: #dfe6e6;
+  border: 0.1rem solid black;
+  font-family: 'Indie Flower', cursive;
+  margin-left: 1rem;
+}
+
+/*button and list styles */
+button[type="submit"] {
+  font-size: 1.25rem;
+  padding: 0.7rem 1.25rem;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: #7b7df4;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.delete-button {
+  background-color: rgb(178, 21, 84);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 3px 6px;
+  cursor: pointer;
+  float: right;
+  margin: 0 0.2rem;
+}
+
+.done-button {
+  background-color: rgb(14, 193, 79);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 3px 6px;
+  cursor: pointer;
+  float: right;
+  margin: 0 0.2rem;
+}
+
+.important-button {
+  background-color: rgb(237, 143, 36);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 3px 6px;
+  cursor: pointer;
+  float: right;
+  margin: 0 0.2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 5rem;
+}
+
+li {
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  padding: 0.7rem;
+  border-bottom: 2px solid #ccc;
+  color: #061b75;
+  flex-wrap: wrap;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 50%;
+}
+
+.important {
+  font-size: 2.5rem;
+  font-style: italic;
+  color:  #ac3235
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  height: 6rem;
+}
+
+/*responsive styles*/
+@media screen and (max-width: 285px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
+  form {
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  label {
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+    margin-right: 0.5rem;
+  }
+
+  input[type="text"] {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  input[type="date"] {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+
+  li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .important {
+    font-size: 1.3rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    height: 5rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .delete-button, .done-button, .important-button {
+    font-size: 0.7rem;
+    padding: 2px 4px;
+    margin-top: 0.5rem;
+  }
+
+  .delete-button {
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (min-width: 285px) and (max-width: 360px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
+  form {
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  label {
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+    margin-right: 0.5rem;
+  }
+
+  input[type="text"] {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  input[type="date"] {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+
+  li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .important {
+    font-size: 1.3rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    height: 5rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+  }
+
+  .delete-button, .done-button, .important-button {
+    font-size: 0.7rem;
+    padding: 2px 4px;
+    margin-top: 0.5rem;
+  }
+
+  .delete-button {
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 460px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  form {
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  label {
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+    margin-right: 0.5rem;
+  }
+
+  input[type="text"] {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  input[type="date"] {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+
+  li {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .important {
+    font-size: 1.7rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    height: 5rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .delete-button, .done-button, .important-button {
+    font-size: 0.7rem;
+    padding: 2px 4px;
+    margin-top: 0.5rem;
+  }
+
+  .delete-button {
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (min-width: 460px) and (max-width: 580px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  form {
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  label {
+    font-size: 1.9rem;
+    margin-top: 0.3rem;
+    margin-right: 0.5rem;
+  }
+
+  input[type="text"] {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  input[type="date"] {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+
+  li {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    padding: 0rem;
+  }
+
+  .important {
+    font-size: 1.7rem;
+  }
+
+  footer {
+    font-size: 1.5rem;
+    height: 5rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  .delete-button, .done-button, .important-button {
+    font-size: 0.9rem;
+    padding: 2px 4px;
+    margin-top: 0.5rem;
+  }
+
+  .delete-button {
+    margin-left: 24rem;
+  
+  }
+}
+
+@media screen and (min-width: 580px) and (max-width: 880px) {
+  .important {
+    font-size: 1.9rem;
+  }
+
+  li {
+    font-size: 1.4rem;
+
+  }
+
+  main {
+    padding: 0;
+  }
+
+  form {
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+}

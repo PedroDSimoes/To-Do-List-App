@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My To-Do List</h1>
+    </header>
+    <main>
+        <form id ="add-task-form">
+            <label for ="new-task-input">New Task:</label>
+            <input id="new-task-input" name="new-task-input" type="text" required placeholder="Enter your next task">
+            <input id ="new-date-input"name="new-date-input" type="date" required>
+            <button type="submit" id="input-button">➯</button>
+        </form>
+        <ul id="task-list">
+        <!--Generate the list items and javascript button elements here-->
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2023 Pedro Simoes</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
